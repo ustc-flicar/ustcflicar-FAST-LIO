@@ -1,3 +1,28 @@
+# Hello
+#### This is a [FAST-LIO](https://github.com/hku-mars/FAST_LIO) fork for USTC FLICAR Dataset
+
+**We add extra script and configuration files to quickly run the experiments on USTC FLICAR dataset.**
+
+After compiling the project correctly on your computer, you can run it as the follow step:
+
+take hf001 for example
+
+1. For Velodyne HDL-32E Lidar data:
+Run
+```
+roslaunch fast_lio mapping_velodyne.launch
+rosbag play YOUR_DATASET_FOLDER/hf001.bag
+```
+
+2. For LiVOX Avia Lidar data:
+Run
+```
+roslaunch fast_lio mapping_avia.launch
+rosbag play YOUR_DATASET_FOLDER/hf001.bag
+```
+
+*If you use the USTC FLICAR dataset in your work, please cite our work using the BibTex code on the [dataset website](https://ustc-flicar.github.io/). Please also cite FAST-LIO publications below.*
+
 ## Related Works
 
 1. [ikd-Tree](https://github.com/hku-mars/ikd-Tree): A state-of-art dynamic KD-Tree for 3D kNN search.
